@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSTHOR</title>
+    <link rel="stylesheet" href="productos.css">
+    <link rel="icon" href="logo.jpg">
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
+<header>
+  <div class="header-container">
+    <img src="logo.jpg" alt="logo">
+    <h1>SYSTHOR</h1>
+    <p>Servicio de Soporte TI y <br>venta de componentes y perifericos</p>
+  </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="file:///C:/Users/nunuv/Desktop/SYSTHOR%20HTML%20Y%20CSS/INICIO/inicio.html">INICIO</a>
+              <ul>
+                <li><a href="#"><i class="fas fa-home"></i>Bienvenido a SYSTHOR</a></li>
+                
+                <li><a href="#"><i class="fas fa-info-circle"></i> Descubre lo que Ofrecenmos</a></li>
+              </ul>
+            </li>
+
+            <li><a href="file:///C:/Users/nunuv/Desktop/SYSTHOR%20HTML%20Y%20CSS/PRODUCTOS/productos.html">PRODUCTOS</a>
+              <ul>
+                <li><a href="#"><i class="fas fa-keyboard"></i> Perifericos</a></li>
+                <li><a href="#"><i class="fas fa-laptop"></i>Laptops</a></li>
+              </ul>
+            </li>
+
+            <li><a href="file:///C:/Users/nunuv/Desktop/SYSTHOR%20HTML%20Y%20CSS/SOPORTE%20TI/soporte.html">SOPORTE TI</a>
+              <ul>
+                    <li><a href="#"><i class="fas fa-cogs"></i>Asesoramiento Tecnico</a></li>
+                    <li><a href="#"><i class="fas fa-desktop"></i>Intalacion de Programas </a></li>
+                    <li><a href="#"><i class="fas fa-wrench"></i>Mantenimiento Preventivo</a></li>
+                    <li><a href="#"><i class="fa fa-virus-slash"></i>Eliminacion de Virus</a></li>
+                    <li><a href="#"><i class="fas fa-keyboard"></i>Intalacion de Perifericos</a></li>
+              </ul>
+            </li>
+
+            <li><a href="file:///C:/Users/nunuv/Desktop/SYSTHOR%20HTML%20Y%20CSS/CONOCENOS/conocenos.html">CONOCENOS</a>
+              <ul>
+                <li><a href="#"><i class="fas fa-users"></i>Quiénes Somos</a></li>
+                <li><a href="#"><i class="fas fa-bullseye"></i>Mision y Vision</a></li>
+              </ul>
+            </li>
+        </ul>
+    </nav>
+      
+    <ul class="icons">
+      <li><a href="enlace-de-contacto" id="enlace-usuario"><i class="fas fa-user"></i> Usuario</a></li>
+      <li><a href="enlace-de-idioma" id="enlace-idioma"><i class="fas fa-globe"></i> Idioma</a></li>
+      <li><a href="enlace-de-busqueda" id="enlace-busqueda"><i class="fas fa-search"></i> Buscar</a></li>
+      <li><a href="enlace-de-compras" id="enlace-compras"><i class="fas fa-shopping-cart"></i> Compras</a></li>
+
+    </ul>
+
+    <!--icono usuario-->
+    <div id="formulario-registro" class="formulario-flotante">
+      <h2>Inicio de Sesión</h2>
+      <form>
+          <div class="campo-formulario">
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" placeholder="Correo electrónico">
+          </div>
+          <div class="campo-formulario">
+              <label for="contrasena">Contraseña:</label>
+              <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
+          </div>
+          <button type="submit">Registrarse</button>
+          <button type="button" id="iniciar-sesion">Iniciar Sesión</button>
+      </form>
+    </div>
+
+
+<!--icono busqueda-->
+<div id="formulario-busqueda" class="formulario-flotante">
+  <form>
+      <div class="campo-formulario">
+          <input type="password" id="contrasena" name="contrasena" placeholder="Buscar">
+      </div>
+      <button type="submit">Buscar</button>
+  </form>
+</div>
+
+<!--icono compras-->
+<div id="formulario-compras" class="formulario-flotante">
+  <h2>Mis Compras</h2>
+  <form>
+
+    <div id="carrito" ondrop="drop(event)" ondragover="allowDrop(event)">
+      Arrastra la imagen del producto
+      </div>
+      
+      <img src="pro10.png" draggable="true" ondragstart="drag(event)" id="producto1" width="100" height="150">
+      <img src="pro13.png" draggable="true" ondragstart="drag(event)" id="producto2" width="100" height="150">
+
+      <div class="campo-formulario">
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad">
+      </div>
+      <button type="submit">Agregar al carrito</button>
+  </form>
+</div>
+
+<!--icono idioma-->
+
+<div id="formulario-idioma" class="formulario-flotante">
+  <h2>Elige un idioma</h2>
+  <form>
+    <div class="campo-formulario">
+      <label for="cantidad">tu idioma preferido:</label>
+      <input type="number" id="cantidad" name="cantidad" placeholder="idioma">
+    </div>
+    <button type="submit">cambiar idioma</button>
+  </form>
+
+</div>
+
+</header>
+
+<body>
+  <!--CARRUSEL-->
+  <div class="carrusel">
+    <div class="atras botones">&#60;</div>  
+    <div class="adelante botones">&#62;</div>
+    <img src="FOTO 1.jpg" alt="" class="carruselImagen">
+  </div>
+ <h2>SOLO PARA GAMERS</h2>
+
+ <div class="contenedor-imagenes">
+  <img src="P1.jpg" alt="P1">
+  <img src="P2.jpg" alt="P2">
+  <img src="P3.jpg" alt="P3">
+  <img src="P4.png" alt="P4">
+  <img src="P5.jpg" alt="P5">
+ </div>
+
+  <h2>DISCOS DUROS Y ALMACENAMIENTO</h2>
+  <Div class="contenedor-imagenes">
+    <img src="D1.jpg" alt="D1">
+    <img src="D2.jpg" alt="D2">
+    <img src="D3.jpg" alt="D3">
+    <img src="D4.jpg" alt="D4">
+    <img src="D5.jpg" alt="D5">
+  </Div>
+  <div class="contenedor-imagenes2">
+   <img src="T1.png" alt="T1">
+   <img src="T2.jpg" alt="T2">
+   <img src="T3.jpg" alt="T3">
+  </div>
+  <div class="contenedor-imagenes3">
+    <img src="T4.jpg" alt="T4">
+    <img src="T5.jpg" alt="T5">
+    
+   </div>
+ 
+</body>
+    
+
+</html>
